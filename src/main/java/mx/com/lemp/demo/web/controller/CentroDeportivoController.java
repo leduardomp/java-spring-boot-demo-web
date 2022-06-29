@@ -41,7 +41,7 @@ public class CentroDeportivoController {
 		return "redirect:/";
 	}
 	
-	@PostMapping("/delete/{id}")
+	@GetMapping("/delete/{id}")
 	public String delete(@PathVariable Long id, Model model) {
 		centroDeportivoService.delete(id);
 		return "redirect:/";
